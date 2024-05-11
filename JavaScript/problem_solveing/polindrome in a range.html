@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polindrome range</title>
+
+    <script>
+        // main()
+        // function main()
+        // {
+        //     let user_input=+(prompt("Enter the number"))
+        //     let count=0;
+        //     for(let i=user_input;;i++)
+        //     {
+        //         if(polindrome(i))
+        //     {
+        //         count++
+        //         console.log(i);
+        //         if(count===4)
+                
+        //         break;
+        //     }
+        //     }
+
+            
+
+        // }
+        // function polindrome(num)
+        // {
+        //     let temp=num;
+        //     reverse=0;
+        //     while(num>0)
+        //     {
+        //         res=(reverse*10)+(num%10);
+        //         num=Math.trunc(num/10);
+        //     }
+        //     if(reverse===temp)
+        //     return true
+        // else 
+        // return false
+
+        // }
+
+main()
+        function main() {
+    let user_input = +(prompt("Enter the number"));
+    let count = 0;
+    
+    for (let i = user_input;; i++) {
+        if (isPalindrome(i)) {
+            count++;
+            console.log(i);
+            if (count === 4) {
+                break;
+            }
+        }
+    }
+}
+
+function isPalindrome(num) {
+    let temp = num;
+    let reverse = 0;
+
+    while (num > 0) {
+        reverse = (reverse * 10) + (num % 10);
+        num = Math.trunc(num / 10);
+    }
+
+    return reverse === temp;
+}
+
+// Uncomment the line below to run the program
+// main();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
