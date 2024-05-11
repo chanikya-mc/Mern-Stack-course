@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>array elements</title>
+
+    <script>
+        function main()
+        {
+            let a=[10,20]
+            for(let i of a)
+            {
+                console.log(i)
+            }
+            console.log(".......................")
+            m1(a)
+            for(let i=0;i<a.length;i++){
+                console.log(a[i])
+            }
+        }
+        function m1(a){
+            let temp=0
+            temp=a[0]
+            a[0]=a[1];
+             a[1]=temp
+
+        }
+        main()
+    </script>
+</head>
+<body>
+    <p>array elements swaping</p>
+
+</body>
+</html>

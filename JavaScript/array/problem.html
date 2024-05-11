@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map probem method</title>
+    <script>
+        // let a=[100,200,-700,-500,-1000,300,-20,10000]
+
+        // let deposit=[]
+        // let widthdrwal=[]
+        // for (let i=0;i<a.length;i++){
+        //     if (a[i]>0)
+        //     {
+        //         deposit.push(a[i])
+        //     }
+        //     else{
+        //         widthdrwal.push(a[i])
+        //     }
+
+        // }
+        // console.log("deposits:- ",deposit)
+        // console.log("withdrawl:- ",widthdrwal)
+
+
+
+         //other method
+
+
+         let a=[100,200,-700,-500,-1000,300,-20,10000]
+        // index and array parameters are optioal to pass i the fucntion
+        let deposit=a.map(function (element,index,array){
+
+                return element>0
+
+        })
+        console.log(deposit)
+
+    </script>
+</head>
+<body>
+map method *** problem
+
+
+
+
+
+</body>
+</html>
