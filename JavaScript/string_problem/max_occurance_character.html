@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>char count</title>
+    <script>
+//     function main() {
+//     let s = "chanikya mc hello cjj cgi";
+//     let max=0;
+//     let character="";
+//     for (let i of s) 
+//     {
+//         let c = 1
+//         for (let j = 1; j < s.length; j++) {
+//             if (i == s[j] && i!==" ") {
+//                 c++;
+//             }
+//         }
+//         if(c>max)
+//         {
+//             max=c;
+//             character=i
+//         }
+
+//     }
+//     console.log(character+"="+max);
+// }
+// // Call the main function
+// main();
+
+
+// second method to solve this.
+function main() {
+    let s = "aa bb cd dd cc ab db aa";
+    let charCounts = {};
+    let max=0;
+
+    for (let i of s) {
+        if(i!==" ")
+        {
+            charCounts[i] = (charCounts[i] || 0) + 1;
+        }
+            
+        
+    }
+
+    
+   for(let i in charCounts)
+   {
+    if(charCounts[i]>max)
+    {
+      max=charCounts[i];
+    }
+   }
+   for(let j in charCounts)
+   {
+    if(charCounts[j]===max)
+    {
+        console.log(`${j} = ${max}`)
+    }
+   }
+ 
+
+
+}
+
+// Call the main function
+main();
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

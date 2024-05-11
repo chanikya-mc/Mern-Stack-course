@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first non repeating</title>
+    <script>
+        let s="HTTDSFGTRH";
+        for(let i of s)
+        {
+            c=0
+            for(let j=0;j<s.length;j++)
+            {
+                if(i==s[j])
+                {
+                    c++;
+                }
+            }
+            if(c==1)
+            {
+                console.log(i+" = "+c)
+                break;
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

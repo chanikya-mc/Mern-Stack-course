@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count</title>
+    <script>
+        let s="1hAAAAEE2 j2jh3 jh3 ahsjkahakdhhf  nnbkjsfdfjkeww78632864832 iuyit@uyuieiwfd ".toLowerCase();
+        let vowel=0;
+        let cons=0;
+        for(let i of s)
+        {
+            if(i>"a" && i<="z")
+            {
+                if(i=='a' ||i=='e' ||i=='i' ||i=='o' ||i=='u')
+                {
+                    vowel++
+                }
+                else
+                {
+                    cons++;
+                }
+
+            }
+        }
+
+        console.log("vowel count = "+vowel);
+        console.log("consonets count = "+ cons);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

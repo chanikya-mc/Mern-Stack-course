@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let s = prompt();//chanikya
+        for (i = 0; i <= s.length - 1; i++) 
+        {
+            for (j = i + 1; j <= s.length - 1; j++)
+            {
+                r = s.substring(i, j + 1)
+
+                function polindrome(r)
+                {
+                    let i=0;
+                    let j=r.length-1;
+                    for(;i<j;)
+                    {
+                        if(r[i]!=r[j])
+                        {
+                            return false;
+                            break;
+
+                        }
+                        
+
+
+                        i++;
+                        j--;
+                    }
+                    return true;
+                }
+            let result=polindrome(r)
+                if(result){
+                    console.log(r)
+
+                }
+                else{
+                    console.log("no sub polindromes are there")
+                }
+                
+                    
+
+            }
+                
+                
+
+        }
+
+
+
+
+
+        
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

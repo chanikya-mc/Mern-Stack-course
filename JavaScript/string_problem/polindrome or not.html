@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string reverese</title>
+    <script>
+    //     let s=prompt()
+    //     let length=s.length;
+    //     let res=""
+    //     for(let i=length-1;i>=0;i--)
+    //     {
+    //         // res+=s[i]
+    //         res+=s.charAt(i)
+    //     }
+    //     // console.log(res)
+    //     if(s===res)
+    //     console.log("polindrome")
+    // else
+    // console.log("not a polindrome")
+
+
+let first_string=prompt();
+function palindrome(first_string)
+{
+let i=0;
+let j=first_string.length-1;
+for(;i<j;)
+    {
+        if(first_string[i]!==first_string[j])
+        {
+            return false
+        }
+        i++;
+        j--;
+        
+    }
+return true;
+
+}
+let result=palindrome(first_string);
+if(result)
+{
+    console.log("Given string is a polindrome")
+}
+else{
+    console.log("not a polindrome")
+}
+
+
+
+    </script>
+</head>
+<body>
+    revers the string
+
+    
+</body>
+</html>
