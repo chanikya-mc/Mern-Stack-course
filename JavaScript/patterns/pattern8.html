@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pattern8</title>
+    <script>
+        main()
+        function main()
+        {
+            let n=+(prompt())
+            p=""
+            for(let i=1;i<=n;i++)
+            {
+                for(let j=n;j>=i;j--)
+                {
+                    p+=j+" "
+                }
+                p+="\n"
+
+            }
+            console.log(p)
+
+        }
+
+// 5 4 3 2 1 
+// 5 4 3 2 
+// 5 4 3 
+// 5 4 
+// 5 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

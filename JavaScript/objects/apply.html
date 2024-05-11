@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>apply</title>
+    <script>
+
+// let obj = { id: 123,
+//     name:"ccccccc",
+//     add:"bangaluru"
+//              };
+// function greet(name,id)
+//  {
+// console.log(`Hello, ${name}! My id is ${id} and my address is  `);
+// console.log(`my origina name is ${this.name} and my id is ${this.id} and my adrress is ${this.add}`)
+// }
+
+
+// greet.apply(obj, ['John',120,"palamaner"]);
+
+// let list={a:"one",b:"two"}
+
+// function dynamicFunction() {
+//     console.log(this.a);
+//     console.log()
+// }
+
+// let args = [1, 'hello', true,[1,12,3,45]];
+// dynamicFunction.apply(list, args);
+
+let person1 = { name: 'Alice', sayHello: function(id)
+ { console.log(`Hello, ${this.name}! and id is ${this.id}`); } };
+let person2 = { name: 'Bob' };
+
+// Borrow sayHello method from person1 and execute it with person2 as the context
+person1.sayHello.apply(person2,[12]);
+
+
+
+    </script>
+</head>
+<body>
+    <h1>for apply method</h1>
+    
+</body>
+</html>

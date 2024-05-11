@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+    <script>
+        let travel = {
+    id: 123,
+    company: "mc",
+    booking: [],
+    book: function (name, no) {
+        let msg = { bookings: `Ticket is booked by ${name} in seat number ${no} and with an id ${this.id} in ${this.company}` };
+        console.log(msg)
+        this.booking.push(msg);
+    }
+};
+let travel1 = {
+    id: 456,
+    company: "tc",
+    booking: [],
+    book: function (name, no) {
+        let msg = { bookings: `Ticket is booked by ${name} in seat number ${no} and with an id ${this.id} in ${this.company}` };
+        console.log(msg)
+        this.booking.push(msg);
+    }
+};
+let travel3 = {
+    id: 789,
+    company: "rrr",
+    booking: [],
+    book: function (name, no) {
+        let msg = { bookings: `Ticket is booked by ${name} in seat number ${no} and with an id ${this.id} in ${this.company}` };
+        console.log(msg)
+        this.booking.push(msg);
+    }
+};
+
+let ticket_book = travel.book;
+
+// console.log("call mnethod.................")
+// ticket_book.call(travel, "chanikya", 65);
+// console.log(travel); 
+// console.log(travel['booking'])
+// console.log(".........................")
+
+
+// console.log("apply mnethod.................")
+// ticket_book.apply(travel1,["ram",12])
+// console.log(travel1); 
+// console.log(travel1['booking'])
+// console.log(".....................")
+
+
+
+console.log("bind method.................")
+let binding=ticket_book.bind(travel3)
+binding("ram",23);
+binding("abs",10)
+let par_bind=ticket_book.bind(travel1,"chanikya")
+par_bind(12);
+par_bind(34)
+
+
+// console.log(travel3.booking[0])
+
+// console.log(binding())
+
+ 
+// console.log(ticket_book)
+// ticket_book.bind(travel3,"vijay",11)
+// console.log(travel3)
+
+// let prototypeOfTravel = Object.getPrototypeOf(travel);
+// console.log(prototypeOfTravel);
+
+        
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+    <h2>travel example</h2>
+    
+</body>
+</html>

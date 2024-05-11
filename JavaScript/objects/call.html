@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>call </title>
+    <script>
+let obj = {name:"chanikya",
+           id:1234
+           };
+
+    function greet(name,id,n)
+     {
+    console.log(`Hello, ${name}! My id is ${id} and...... my original name is ${this.name} and my id is ${this.id}`);
+     }
+
+
+greet.call(obj, 'John',888,"sksk");
+
+    </script>
+</head>
+<body>
+    <p>this isfor call method in this </p>
+    
+</body>
+</html>
