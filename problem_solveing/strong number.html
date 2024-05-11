@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>strong number</title>
+    <script>
+        let n=+(prompt())
+        function main(n)
+        {
+            let t=n;
+            let sum=0;
+            let fact=1
+            for(;t>0;)
+            {
+                temp=t%10;
+            for(let i=2;i<=temp;i++)
+            {
+                fact*=i
+            
+            }
+            sum+=fact
+            fact=1
+            t=Math.trunc(t/10)
+
+            }
+            return sum
+
+        }
+        
+        let res=main(n)
+        if (res==n){
+            console.log("strong number")
+
+        }
+        else{
+            console.log("not strong")
+        }
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
