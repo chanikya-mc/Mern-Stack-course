@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>increment and decrement</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            color: brown;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <h1> count value:- <span id="count"> ordered items</span></h1>
+        <button onclick="increment()">increment</button>
+        <button onclick="decrement()">decrement</button>
+    </div>
+    <script>
+        let spanTag=document.getElementById("count");
+        let count=0;
+        spanTag.textContent=count;
+        function increment()
+        {
+            count++;
+            spanTag.textContent=count;
+            spanTag.style.color="blue";
+        }
+        function decrement()
+        {   if(count<=0)
+            {
+                spanTag.textContent="negative values will come"
+            }
+            else{
+                count--;
+            spanTag.textContent=count;
+            spanTag.style.color="red";
+
+            }
+            // count--;
+            // spanTag.textContent=count;
+            // spanTag.style.color="red";
+        }
+
+    </script>
+</body>
+</html>
