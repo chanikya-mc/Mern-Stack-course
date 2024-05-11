@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Apply styles to the paragraph immediately following a heading */
+        h2 + p {
+            color: blue;
+        }
+        h3+p{
+            background-color: aqua;
+        }
+    </style>
+    <title>Adjacent Sibling Example</title>
+</head>
+<body>
+    <h2>Heading 1</h2>
+    <p>This paragraph is not affected by the adjacent sibling selector.</p>
+    
+    <h2>Heading 2</h2>
+    <p>This paragraph will be styled because it is the adjacent sibling of the heading above.</p>
+    
+    <h2>Heading 3</h2>
+    <p>Another unrelated paragraph.</p>
+    <h3>headinng 3</h3>
+    <p>helllllllllllllllllllllllllllo</p>
+    <h3>headinng 3</h3>
+    <p>helllllllllllllllllllllllllllo</p>
+</body>
+</html>

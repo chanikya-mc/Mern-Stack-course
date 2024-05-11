@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+        .parent img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .w1 {
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            padding: 60px;
+            border-top: 5px solid orangered;
+            animation: rotate 2.4s linear 0s infinite normal;
+        }
+        .w2 {
+            position: relative;
+            left: -40px;
+            top: -30px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            padding: 30px;
+            border-top: 5px solid green;
+            animation: rotate 2s linear 0.3s infinite normal;
+        }
+        .w3 {
+            position: relative;
+            left: -40px;
+            top: -30px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            padding: 10px;
+            border-top: 5px solid rgb(153, 15, 203);
+            animation: rotate 1.3s linear 0.3s infinite normal;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="w1">
+        <div class="w2">
+            <div class="w3">
+                <div class="parent">
+                    <img src="my photo.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

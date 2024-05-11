@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            position: relative;
+        }
+
+        .parent img{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            text-align: center;
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            transform: translate(35%,-10%);
+
+        }
+        .w1{
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            padding: 60px;
+            border-top: 5px solid orangered;
+            animation: rotate 2.4s linear 0ms infinite normal;
+        }
+        .w2{
+            position: relative;
+            left: -40px;
+            top: -30px;
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            padding: 30px;
+            border-top: 5px solid green;
+            animation: rotate 2s linear 0.3s infinite normal;
+
+
+        }
+        .w3{
+            
+            left: -40px;
+            top: -30px;
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            padding: 10px;
+            border-top: 5px solid rgb(153, 15, 203);
+            animation: rotate 1.3s linear 0.3s infinite normal;
+
+
+        }
+        @keyframes rotate{
+            0%{
+                transform: perspective(200px) rotate(0deg);
+
+            }
+            100%{
+                transform: perspective(200px) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="my photo.jpg" alt="">
+        <div class="w1">
+            <div class="w2">
+                <div class="w3">
+                           </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+    
+    
+</body>
+</html>

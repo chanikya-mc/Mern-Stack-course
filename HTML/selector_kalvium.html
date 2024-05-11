@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>selector</title>
+    <style>
+        p{
+            color:blue;
+        }
+        .first{
+            background-color: aqua;
+        }
+        #second{
+            background-color: red;
+        }
+        /* div,h1{
+            color: aquamarine;
+        } */
+        div>h2{
+            color: orange;
+        }
+        .name:hover{
+            background-color:blue;
+
+        }
+        h1::first-letter{
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="first"> hello1</h1>
+    <h1 id="second"> hello1</h1>
+    <h1> hello1</h1>
+    <h1 class="name"> hello2</h1>
+    <h1> hello1</h1>
+    <p>hello good evening</p>
+    <div>
+        this is division
+        <h2>division</h2>
+    </div>
+    
+    
+</body>
+</html>

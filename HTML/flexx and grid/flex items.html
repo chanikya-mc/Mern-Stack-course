@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex child properties</title>
+
+    <style>
+.parent
+{
+    display: flex;
+    background-color:aquamarine ;
+    font-size: 50px;
+    height: 100px;
+}
+.child1{
+    background-color: blue;
+    color:white;
+    border: 2px solid black;
+    width: 250px;
+    order: 1; 
+    flex-grow: 1;
+    flex-basis: 400px;
+    flex-shrink: 0;
+}
+.child2{
+    background-color: red;
+    color:white;
+    border: 2px solid black;
+    width: 250px;
+    order: 4;
+   
+}
+.child3{
+    background-color: brown;
+    color:white;
+    border: 2px solid black;
+    width: 250px;
+    order: 3;
+    flex-grow: 1;
+    align-self:stretch;
+}
+.child4{
+    background-color: green;
+    color:white;
+    border: 2px solid black;
+    width: 250px;
+    order: 0;
+    flex-basis: 400px;
+    flex-shrink: 3;
+}
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1"> abc</div>
+        <div class="child2">def</div>
+        <div class="child3">klm</div>
+        <div class="child4">xyz</div>
+    </div>
+
+
+    
+</body>
+</html>

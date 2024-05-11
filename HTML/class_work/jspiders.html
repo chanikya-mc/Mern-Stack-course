@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../fonts/font_styles/css/all.css">
+    
+    <title>flex</title>
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+        }
+
+        .flex {
+            background-color: black;
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; /* Distribute space between items */
+            padding: 3px; /* Add padding for better spacing */
+        }
+
+        .child1 {
+            color: white;
+            /* text-align: center; */
+        }
+
+        h1::first-letter {
+            color: orange;
+        }
+
+        .child {
+             /* display: flex;  */
+            /* Nested flex container for anchor tags */ */
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            font-size: 20px;
+        }
+        .child>a:hover{
+            color: orange;
+        }
+        .navigation{
+            height: 30px;
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 0px;
+            justify-content:space-around; 
+            
+
+
+        }
+        button{
+            padding: 5px;
+            height: 30px;
+           flex-grow: 1;
+
+           /* width: 200px; */
+           
+        }
+        #golba1{
+            background-color: rgb(240, 150, 16);
+        }
+        #golba2{
+            background-color: rgb(48, 183, 77);
+        }
+        #golba3{
+            background-color: rgb(93, 109, 217);
+        }
+        #golba4{
+            background-color: rgb(150, 145, 137);
+        }
+        #golba5{
+            background-color: rgb(245, 87, 195);
+        }
+        #golba6{
+            background-color: rgb(240, 16, 72);
+        }
+        #golba7{
+            background-color: rgb(207, 194, 13);
+        }
+        #golba8{
+            background-color:coral;
+        }
+        #golba9{
+            background-color:gold;
+        }
+        #golba10{
+            background-color:greenyellow;
+        }
+        #golba11{
+            background-color:lightsalmon;
+        }
+        #golba12{
+            background-color:mediumslateblue;
+        }
+        #golba13{
+            background-color:slategray;
+        }
+        #golba14{
+            background-color:aquamarine;
+        }
+        #golba15{
+            background-color: rgb(240, 150, 16);
+        }
+    </style>
+</head>
+<body>
+    <header class="flex">
+        <div class="child1">
+            <h1>Jspiders</h1>
+            <span>training and placement center</span>
+        </div>
+        <div class="child">
+            <a href=""><i class="fa-solid fa-house"></i>Home</a>
+            <a href=""><i class="fa-solid fa-address-book"></i>Contacts</a>
+            <a href=""><i class="fa-regular fa-address-card"></i>About us</a>
+            <a href=""><i class="fa-solid fa-calendar-days"></i>Batches</a>
+            <a href=""><i class="fa-solid fa-users"></i>Placement</a>
+            <a href=""><i class="fa-brands fa-dropbox"></i>corporates</a>
+            <a href=""><i class="fa-solid fa-phone"></i>9000440757</a>
+        </div>
+    </header>
+    <nav class="navigation">
+        <div>
+            <button id="golba1">Global</button>
+            <button id="golba2">Online</button>
+            <button id="golba3">Karnataka</button>
+            <button id="golba4">Maharastra</button>
+            <button id="golba5">Tamil Nadu</button>
+            <button id="golba6">Telengana</button>
+            <button id="golba7">Andhra Pradesh</button>
+            <button id="golba8">Madhya Pradesh</button>
+            <button id="golba9">Chandighar</button>            
+            <button id="golba10">Haryana</button>
+            <button id="golba11">Odisha</button>
+            <button id="golba12">Uther Pradesh</button>
+            <button id="golba13">Delhi</button>
+            <button id="golba14">Gujarath</button>
+            <button id="golba15">Kerala</button>
+            <button id="golba15">Oddissa</button>
+        </div>
+    </nav>
+</body>
+</html>

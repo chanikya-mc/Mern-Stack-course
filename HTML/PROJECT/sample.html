@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color:antiquewhite;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: aliceblue;
+      padding: 10px 20px;
+    }
+ 
+    .left-content {
+      padding: 7px 20px;
+    }
+
+    .left-content:hover {
+      color: crimson;
+    }
+
+    .right-content {
+      display: flex;
+      gap: 5px;
+    }
+
+    .right-content > a {
+      text-decoration: none;
+      padding: 7px 20px;
+    }
+
+    a:hover {
+      color: coral;
+    }
+
+    a:active {
+      color: green;
+    }
+
+    .para {
+      margin-top: 150px;
+      margin-left: 200px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    button {
+      border-radius: 10px;
+      background-color: dodgerblue;
+      color: white;
+      font-size: medium;
+      padding: 7px;
+      text-align: center;
+      width: 100px;
+    }
+
+    .name {
+      color: orangered;
+    }
+
+    .para  {
+       /* Adjusted margin for better positioning */
+       display: inline-block;
+       margin-left: 200px;
+       margin-top: 100px;
+       
+       width: 500px;
+     
+    }
+    .image  {
+      
+     display: inline-block;
+     margin-top: 100px;
+     border:2px solid black;
+     box-shadow: 1px 1px 10px black;
+     width: 300px;
+     height: 300px;
+     overflow:hidden;
+     border-radius: 20px;
+     
+     
+             
+    }
+    .image>img{
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+      transition: all;
+      transition: 2s;
+      
+
+    }
+    img:hover{
+      
+      transform: scale(1.1);
+      transition-delay:2s;
+      transition: ease-in-out;
+      filter:brightness(7);
+
+    }
+    .footer {
+      
+      background-color: aliceblue;
+      border-top: 500px;
+      text-align: center;
+    }
+
+  </style>
+  <title>Chanikya</title>
+</head>
+<body>
+  <div class="header">
+    <div class="left-content"><b>chanikya</b></div>
+    <div class="right-content">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Skills</a>
+      <a href="#">Works</a>
+      <a href="#">Contacts</a>
+    </div>
+  </div>
+<div>
+    <div class="para">
+        
+        <h1>Hi,</h1>
+        <h1>I'am <span class="name">Chanikya</span></h1>
+        <h1>Web designer</h1>
+        <a href="#"><button>Contact</button></a>
+      </div>
+      <div class="image">
+        <img src="mc.jpg" alt="Image not loaded" >
+    </div>
+    <div class="footer">
+
+      
+    </div>
+
+
+</div>
+  
+
+  
+
+  <div class="footer">
+    <h4>footer</h4>
+
+  </div>
+</body>
+</html>

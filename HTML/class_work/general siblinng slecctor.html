@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Apply styles to all paragraphs that are siblings of an h2 element */
+        h2 ~ p {
+            color: green;
+        }
+    </style>
+    <title>General Sibling Example</title>
+</head>
+<body>
+    <h2>Heading 1</h2>
+    <p>This paragraph is a sibling of the heading and will be styled.</p>
+    
+    <h2>Heading 2</h2>
+    <p>Another paragraph that is a sibling of the heading and will be styled as well.</p>
+    
+    <p>This paragraph is not affected by the general sibling selector.</p>
+    <h2>Heading 2</h2>
+    <p>Another paragraph that is a sibling of the heading and will be styled as well.</p>
+    
+    <p>This paragraph is not affected by the general sibling selector.</p>
+</body>
+</html>
